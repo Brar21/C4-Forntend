@@ -18,7 +18,6 @@ function App() {
         <Route path="/register" element={<Register/>}/>
         <Route path="/allposts" element={<Allposts/>}/>
         <Route path="/create" element={<Createposts/>}/>
-
       </Routes>
     </div>
   );
