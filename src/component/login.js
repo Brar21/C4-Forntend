@@ -4,7 +4,7 @@ function Login() {
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
     const login=()=>{
-        fetch("https://ill-ruby-penguin-wear.cyclic.app/users/login",{
+        fetch("https://drab-pear-bat-cap.cyclic.app/users/login",{
             method:"POST",
             body:JSON.stringify({email,password}),
             headers:{

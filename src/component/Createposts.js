@@ -5,7 +5,7 @@ function Createposts() {
     const [device,setDevice]=useState("");
     const [body,setBody]=useState("")
     const posted=()=>{
-        fetch("https://ill-ruby-penguin-wear.cyclic.app/posts/create",{
+        fetch("https://drab-pear-bat-cap.cyclic.app/posts/create",{
             method:"POST",
             body:JSON.stringify({title,body,device}),
             headers:{

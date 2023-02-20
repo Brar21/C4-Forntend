@@ -7,7 +7,7 @@ function Register() {
     const [password,setPassword]=useState("");
     const [gender,setGender]=useState("");
     const register=()=>{
-        fetch("https://ill-ruby-penguin-wear.cyclic.app/users/register",{
+        fetch("https://drab-pear-bat-cap.cyclic.app/users/register",{
             method:"POST",
             body:JSON.stringify({name,email,password,gender}),
             headers:{

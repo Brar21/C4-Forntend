@@ -5,7 +5,7 @@ function Allposts() {
     const [device,setDevice]=useState("");
 
     useEffect(()=>{
-fetch("https://ill-ruby-penguin-wear.cyclic.app/posts",{
+fetch("https://drab-pear-bat-cap.cyclic.app/posts",{
     method:"GET",
     headers:{
         "Content-Type":"application/json",
@@ -14,7 +14,7 @@ fetch("https://ill-ruby-penguin-wear.cyclic.app/posts",{
 }).then((res)=>res.json()).then((res)=>setData(res)).catch((err)=>console.log(err))  
     },[])
     const deleted=(id)=>{
-        fetch(`https://ill-ruby-penguin-wear.cyclic.app/posts/delete/${id}`,{
+        fetch(`https://drab-pear-bat-cap.cyclic.app/posts/delete/${id}`,{
             method:"DELETE",
             headers:{
                 "Content-Type":"application/json",
@@ -23,7 +23,7 @@ fetch("https://ill-ruby-penguin-wear.cyclic.app/posts",{
         }).then((res)=>res.json()).then((res)=>console.log(res)).catch((err)=>console.log(err))  
     }
 const updated=(id)=>{
-    fetch(`https://ill-ruby-penguin-wear.cyclic.app/posts/update/${id}`,{
+    fetch(`https://drab-pear-bat-cap.cyclic.app/posts/update/${id}`,{
         method:"PATCH",
         body:JSON.stringify({device:device}),
         headers:{
