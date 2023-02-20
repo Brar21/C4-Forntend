@@ -6,6 +6,7 @@ import Login from './component/login';
 import Register from './component/register';
 import Allposts from './component/Allposts';
 import Createposts from './component/Createposts';
+import Home from './component/Home';
 
 function App() {
   return (
